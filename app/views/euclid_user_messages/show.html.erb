@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Euclid user:</b>
+  <%= @euclid_user_message.euclid_user_id %>
+</p>
+
+<p>
+  <b>Euclid message:</b>
+  <%= @euclid_user_message.euclid_message_id %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @euclid_user_message.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_euclid_user_message_path(@euclid_user_message) %> |
+<%= link_to 'Back', euclid_user_messages_path %>

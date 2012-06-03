@@ -1,0 +1,33 @@
+<%= form_for(@euclid_user) do |f| %>
+  <% if @euclid_user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@euclid_user.errors.count, "error") %> prohibited this euclid_user from being saved:</h2>
+
+      <ul>
+      <% @euclid_user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :mac_addr %><br />
+    <%= f.text_field :mac_addr %>
+  </div>
+  <div class="field">
+    <%= f.label :sms %><br />
+    <%= f.text_field :sms %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br />
+    <%= f.text_field :note %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

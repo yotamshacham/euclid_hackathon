@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  euclid_user_id: 1
+  euclid_message_id: 1
+  note: MyString
+
+two:
+  euclid_user_id: 1
+  euclid_message_id: 1
+  note: MyString

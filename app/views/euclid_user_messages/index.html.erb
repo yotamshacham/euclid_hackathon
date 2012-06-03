@@ -1,0 +1,27 @@
+<h1>Listing euclid_user_messages</h1>
+
+<table>
+  <tr>
+    <th>Euclid user</th>
+    <th>Euclid message</th>
+    <th>Note</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @euclid_user_messages.each do |euclid_user_message| %>
+  <tr>
+    <td><%= euclid_user_message.euclid_user_id %></td>
+    <td><%= euclid_user_message.euclid_message_id %></td>
+    <td><%= euclid_user_message.note %></td>
+    <td><%= link_to 'Show', euclid_user_message %></td>
+    <td><%= link_to 'Edit', edit_euclid_user_message_path(euclid_user_message) %></td>
+    <td><%= link_to 'Destroy', euclid_user_message, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Euclid user message', new_euclid_user_message_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @euclid_user.name %>
+</p>
+
+<p>
+  <b>Mac addr:</b>
+  <%= @euclid_user.mac_addr %>
+</p>
+
+<p>
+  <b>Sms:</b>
+  <%= @euclid_user.sms %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @euclid_user.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_euclid_user_path(@euclid_user) %> |
+<%= link_to 'Back', euclid_users_path %>

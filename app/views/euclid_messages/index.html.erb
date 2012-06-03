@@ -1,0 +1,25 @@
+<h1>Listing euclid_messages</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @euclid_messages.each do |euclid_message| %>
+  <tr>
+    <td><%= euclid_message.title %></td>
+    <td><%= euclid_message.body %></td>
+    <td><%= link_to 'Show', euclid_message %></td>
+    <td><%= link_to 'Edit', edit_euclid_message_path(euclid_message) %></td>
+    <td><%= link_to 'Destroy', euclid_message, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Euclid message', new_euclid_message_path %>

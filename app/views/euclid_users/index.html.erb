@@ -1,0 +1,29 @@
+<h1>Listing euclid_users</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Mac addr</th>
+    <th>SMS</th>
+    <th>Note</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @euclid_users.each do |euclid_user| %>
+  <tr>
+    <td><%= euclid_user.name %></td>
+    <td><%= euclid_user.mac_addr %></td>
+    <td><%= euclid_user.sms %></td>
+    <td><%= euclid_user.note %></td>
+    <td><%= link_to 'Show', euclid_user %></td>
+    <td><%= link_to 'Edit', edit_euclid_user_path(euclid_user) %></td>
+    <td><%= link_to 'Destroy', euclid_user, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Euclid user', new_euclid_user_path %>

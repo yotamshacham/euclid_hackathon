@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  mac_addr: MyString
+  scs: MyString
+  node: MyString
+
+two:
+  name: MyString
+  mac_addr: MyString
+  scs: MyString
+  node: MyString
